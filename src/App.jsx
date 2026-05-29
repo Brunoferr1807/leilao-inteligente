@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 const ANTHROPIC_API_URL = "/api/claude";
 
 // ─── Prompts ─────────────────────────────────────────────────────────────────
-const SYSTEM_PROMPT = `Você é um especialista em leilões judiciais e extrajudiciais de imóveis no Brasil, com foco em São Paulo. Você tem profundo conhecimento em:
+const SYSTEM_PROMPT = `Você é um especialista em leilões judiciais e extrajudiciais de imóveis no Brasil, com foco em São Paulo, Pernambuco,Paraíba, Goiás, Santa Catarina,Brasília e Paraná. Você tem profundo conhecimento em:
 
 1. Avaliação de imóveis pelo método comparativo de mercado (sem necessidade de avaliador presencial)
 2. Análise de viabilidade financeira para operações de "flip" (compra, reforma e revenda)
