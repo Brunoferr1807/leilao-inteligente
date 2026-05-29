@@ -151,9 +151,9 @@ function AbaAnalise({ onAddToComparador }) {
     if (!form.bairro || !form.area || !form.lance_inicial) { alert("Preencha: bairro, área e lance inicial."); return; }
     setLoading(true); setResult(null); setVmc(null); setScore(null); setRec(null);
     try {
-      const prompt = `Analise este imóvel em leilão para flip em São Paulo:
+      const prompt = `Analise este imóvel em leilão para flip em ${form.cidade}:
 
-TIPO: ${form.tipo} | LOCAL: ${form.bairro}, ${form.cidade}-SP | ÁREA: ${form.area}m² | QUARTOS: ${form.quartos}
+TIPO: ${form.tipo} | LOCAL: ${form.bairro}, ${form.cidade} | ÁREA: ${form.area}m² | QUARTOS: ${form.quartos}
 LANCE INICIAL: R$${form.lance_inicial} | AVALIAÇÃO EDITAL: ${form.valor_avaliacao ? "R$" + form.valor_avaliacao : "não informado"}
 PRAÇA: ${form.lote} | OBS: ${form.observacoes || "nenhuma"}
 
